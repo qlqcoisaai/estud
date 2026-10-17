@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="glass side">
+<div class="brand"><i class="orb s"></i>Estudo</div>
+<button class="pill" id="novo">Nova conversa</button>
+<div class="lista" id="lista"></div>
+<div class="grow"></div>
+<div class="mem"><small>Memória</small><p id="mem"></p></div>
+</aside>
+<main class="glass main">
+<header>
+<div id="modos"></div>
+<div class="dir"><div class="status"><i class="dot"></i><span id="prov">Automático</span></div><button class="link" id="cfg">Configurações</button></div>
+</header>
+<section id="msgs"><div id="inicio"></div><div id="conv"></div></section>
+<footer>
+<form id="f"><textarea id="q" rows="1" placeholder="Pergunte algo sobre a matéria…"></textarea>
+<button class="send" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></form>
+</footer>
+</main>
+</div>
+<dialog id="dlg" class="glass"><form method="dialog">
+<h2>Chaves de API</h2>
+<p>As chaves ficam só neste navegador. Crie uma grátis no <a href="https://console.groq.com/keys" target="_blank" rel="noopener">Groq</a> ou no <a href="https://console.mistral.ai/api-keys" target="_blank" rel="noopener">Mistral</a>.</p>
+<div id="campos"></div>
+<div class="row"><button class="pill" value="x">Cancelar</button><button class="pill pri" id="salvar" value="ok">Salvar</button></div>
+</form></dialog>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
